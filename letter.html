@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Final Output</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+  <div class="stage">
+    <div class="center" id="center">
+      <div class="envelope" id="envelope" tabindex="0" aria-label="Open letter">
+        <div class="env-body"></div>
+        <div class="env-flap"></div>
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="56" height="56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path fill="#fff" d="M12 21s-7.2-4.6-9.1-7.6A5.8 5.8 0 0 1 2 8.9C2 5.5 5 3 8.4 3c1.8 0 3.4.9 4.6 2.3C14.2 3.9 15.8 3 17.6 3 21 3 24 5.5 24 8.9c0 2.5-1.8 4.3-3 6.5C18.7 16.3 12 21 12 21z"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="paper" id="paper" aria-hidden="true" role="document">
+        <div class="paper-inner notebook">
+          <div class="spiral" aria-hidden="true"></div>
+
+          <div class="content" id="content">
+            <div class="pages" id="pages" aria-live="polite"></div>
+
+            <div class="controls-row" id="controls-row" aria-hidden="true">
+              <button class="btn" id="prev-btn" aria-label="Previous" disabled>‹</button>
+              <button class="btn primary" id="next-btn" aria-label="Next">›</button>
+            </div>
+          </div>
+
+          <!-- QR image element that is shown only on the last page (lower-right of paper) -->
+          <div class="qr-inpage" id="qr-inpage" aria-hidden="true">
+            <img id="qrcode" alt="QR code" src="qrcode.png" />
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="letter.js" defer></script>
+</body>
+</html>
