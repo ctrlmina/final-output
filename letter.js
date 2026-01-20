@@ -37,7 +37,7 @@ I may not always find the perfect words to explain everything I feel, but one th
 
 I know things are not perfect and we don’t know what the future holds. But I want to be with you while we figure it out. I want to grow with you, not because we have to, but because we want to.
 
-PS: Alam mo, ang dami ko pang gustong sabihin sa’yo pero sabihin ko na lang yung iba next time. Please play tayo later kasi may something ako for you. I really hope you will like it.`;
+PS: Alam mo, ang dami ko pang gustong sabihin sa’yo pero sabihin ko na lang yung iba next time. Next step po ay open mo ang heartopia then wait mo ako.`;
 
   const paragraphs = fullMessage.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
 
@@ -277,4 +277,5 @@ PS: Alam mo, ang dami ko pang gustong sabihin sa’yo pero sabihin ko na lang yu
   });
 
   window._ll = { paginateParagraphs, setQR: window.setQR };
+
 });
